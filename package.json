@@ -9,8 +9,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "postinstall": "chmod +x node_modules/.bin/vite",
+    "build": "npx vite build",
+    "postinstall": "chmod +x node_modules/.bin/* || true",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest"
