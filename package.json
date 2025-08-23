@@ -8,8 +8,9 @@
     "npm": "10.x"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "npx vite build",
+    "dev": "vite --host",
+    "build": "vite build",
+    "start": "vite preview --host",
     "postinstall": "chmod +x node_modules/.bin/* || true",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
