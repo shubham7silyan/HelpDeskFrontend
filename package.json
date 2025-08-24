@@ -10,8 +10,6 @@
   "scripts": {
     "dev": "npx vite --host",
     "build": "npx vite build",
-    "prebuild": "echo 'Starting build process...'",
-    "prestart": "npm run build",
     "start": "node server.js",
     "serve": "npx serve -s dist -l 8080",
     "postinstall": "",
