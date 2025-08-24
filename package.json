@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "prebuild": "echo 'Starting build process...'",
+    "prestart": "npm run build",
     "start": "node server.js",
     "serve": "npx serve -s dist -l 8080",
     "postinstall": "chmod +x node_modules/.bin/* || true",

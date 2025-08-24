@@ -5,10 +5,7 @@ nixPkgs = ['nodejs', 'npm']
 cmds = ['npm ci']
 
 [phases.build]
-cmds = ['npm run build']
-
-[phases.deploy]
-cmds = ['ls -la dist/']
+cmds = ['npm run build', 'ls -la', 'ls -la dist/']
 
 [start]
 cmd = 'npm start'
