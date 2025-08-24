@@ -8,7 +8,7 @@ export default defineConfig({
     host: true,
     proxy: {
       '/api': {
-        target: 'https://helpdeskbackend-g44g.onrender.com',
+        target: process.env.VITE_API_URL,
         changeOrigin: true
       }
     }
