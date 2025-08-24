@@ -13,7 +13,6 @@
     "start": "node server.js",
     "serve": "npx serve -s dist -l 8080",
     "postinstall": "chmod +x node_modules/.bin/* || true",
-    // Trigger Railway rebuild with new environment variables
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest"
