@@ -1,8 +1,11 @@
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
+// Force Railway backend URL
+const RAILWAY_BACKEND_URL = 'https://helpdeskbackend-production.up.railway.app';
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://helpdeskbackend-production.up.railway.app',
+  baseURL: RAILWAY_BACKEND_URL,
   timeout: 10000,
 });
 
