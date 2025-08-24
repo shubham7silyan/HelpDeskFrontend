@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npx vite --host",
     "build": "npx vite build",
-    "start": "node server.js",
+    "start": "npm run build && node server.js",
     "serve": "npx serve -s dist -l 8080",
     "postinstall": "",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
