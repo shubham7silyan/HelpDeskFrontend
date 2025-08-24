@@ -7,13 +7,13 @@
     "npm": ">=8.x"
   },
   "scripts": {
-    "dev": "npx vite --host",
-    "build": "npx vite build",
+    "dev": "node_modules/.bin/vite --host",
+    "build": "node_modules/.bin/vite build",
     "start": "npm run build && node server.js",
     "serve": "npx serve -s dist -l 8080",
     "postinstall": "",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "npx vite preview",
+    "preview": "node_modules/.bin/vite preview",
     "test": "vitest"
   },
   "dependencies": {
