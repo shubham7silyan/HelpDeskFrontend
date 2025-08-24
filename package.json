@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "node_modules/.bin/vite --host",
-    "build": "node_modules/.bin/vite build",
+    "build": "node node_modules/vite/bin/vite.js build",
     "start": "npm run build && node server.js",
     "serve": "npx serve -s dist -l 8080",
     "postinstall": "",
